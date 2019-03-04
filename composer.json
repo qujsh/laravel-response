@@ -1,0 +1,32 @@
+{
+    "name": "qujsh/laravel-response",
+    "description": "it's middleware for special template, set your response info",
+    "keywords": [
+        "qujsh",
+        "laravel",
+        "response",
+        "template",
+        "200"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "qujsh",
+            "email": "ningmingqaz@126.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Qujsh\\Response\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qujsh\\Response\\ResponseServiceProvider"
+            ]
+        }
+    }
+
+}
