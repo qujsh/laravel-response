@@ -1,6 +1,23 @@
 # laravel-response
 response custom，定制 response 返回值
 
+### Response result
+
+Use the middleware to handle the error response; the result template like:
+
+```
+http status: 200 OK
+{
+    "message": "The password field is required.",
+    "status_code": "4220000",
+    "extra": {
+        "status_code": 422,
+        "message": "422 Unprocessable Entity"
+    }
+}
+```  
+status_code form by "http code" + 0000; 
+
 ### Laravel
 
 This package can be used in Laravel 5.4 or higher. 
@@ -40,5 +57,7 @@ Route::group(['middleware' => ['responseCustom:default']], function () {
     //
 });
 ```
-
+PS: you should add this middleware in first queue as the middleware’ rule(first-in, last-out), 
+this plugin' base is resolve the error result, and acquire the specified info from the array 
+we set in config/message.php file. 
 
