@@ -18,6 +18,9 @@ http status: 200 OK
 ```  
 status_code form by "http code" + 0000; 
 
+PS: 404 Not Found，405 Method Not Allowed，need make different handle，
+because it gets result before middleware, can't be control
+
 ### Laravel
 
 This package can be used in Laravel 5.4 or higher. 
