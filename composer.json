@@ -6,6 +6,7 @@
         "laravel",
         "response",
         "template",
+        "api",
         "200"
     ],
     "license": "MIT",
