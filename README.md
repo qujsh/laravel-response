@@ -9,7 +9,7 @@ Use the middleware to handle the error response; the result template like:
 http status: 200 OK
 {
     "message": "The password field is required.",
-    "status_code": "4220000",
+    "code": "4220000",
     "extra": {
         "status_code": 422,
         "message": "422 Unprocessable Entity"
